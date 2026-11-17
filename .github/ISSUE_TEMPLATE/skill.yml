@@ -1,0 +1,62 @@
+name: Suggest a skill or correction
+description: Suggest a source-verifiable agent skill or correct an existing entry
+title: "[Skill] "
+body:
+  - type: dropdown
+    id: request
+    attributes:
+      label: Request type
+      options: [New skill, Correction]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Skill name
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Original repository or SKILL.md URL
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [Coding, Testing, Documents, Design, Data, DevOps, Research, Writing]
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description or correction
+      description: Summarize in at most 200 characters. For corrections, identify the page and outdated statement.
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License and supporting source URL
+    validations:
+      required: true
+  - type: input
+    id: name_submitter
+    attributes:
+      label: Your name or GitHub handle
+  - type: input
+    id: tags
+    attributes:
+      label: Tags (optional)
+  - type: input
+    id: website
+    attributes:
+      label: Website or social profile (optional)
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public submission
+      options:
+        - label: I have not included secrets or private personal data.
+          required: true
