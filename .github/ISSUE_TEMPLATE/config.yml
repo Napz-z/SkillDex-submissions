@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Browse SkillDex Directory
+    url: https://skilldex.io/skills
+    about: Search existing skills before submitting a new entry.
+  - name: Read Agent Skill Guides
+    url: https://skilldex.io/guides
+    about: Learn how to choose, evaluate, install, and create agent skills.
